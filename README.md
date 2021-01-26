@@ -9,6 +9,11 @@
 - Replace the value of __projectId__ in the [server.js file](https://github.com/ShashiKumar-SignalWire/signalwire-df/blob/master/README.md#L32) with your Dialogflow agent’s Project ID.
 
 
+### Buying a Phone Number
+
+1. Log in to the your Signalwire Space.
+2. Navigate to Phone Numbers
+3. Click on the + New button, Search for a number that has SMS capabilities and buy it.
 
 
 ### Deploying the Integration Using Cloud Run
@@ -42,6 +47,7 @@ You can view a list of your active integration deployments under [Cloud Run](htt
 ### Setting up Phone Number
 
 1. In the "Phone Number" section, Click on your phone number to integrate Dialog flow agent.
-
+2. Click on the  purchased number 
+4. Click on Edit Setings
 3. Underneath "Messaging", take the value for the server URL printed in the console after the completion of the execution of the last command from the above section to the __"A message comes in"__ fill-in box. Set the first drop-down to __Webhook__ and the HTTP method to __HTTP POST__. 
 
