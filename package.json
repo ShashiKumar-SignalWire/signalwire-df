@@ -1,0 +1,22 @@
+{
+  "name": "signalwire-integration",
+  "version": "0.0.1",
+  "description": "A server that connects Google's dialogflow to signalwire",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "request": "^2.88.0",
+    "dialogflow": "0.9.1",
+    "@signalwire/node": "^2.3.3"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "insert URL here"
+  },
+  "license": "Apache-2.0"
+}
