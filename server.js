@@ -21,7 +21,7 @@ const response = new RestClient.LaML.MessagingResponse()
 
 const sessionClient = new dialogflowSessionClient(projectId);
 
-const listener = app.listen(process.env.PORT || 8080, function() {
+const listener = app.listen(process.env.PORT, function() {
   console.log('Your Signalwire integration server is listening on port '
       + listener.address().port);
 });
@@ -33,7 +33,7 @@ app.post('/', async function(req, res) {
   const dialogflowResponse = (await sessionClient.detectIntent(
       text, id, body)).fulfillmentText;
   const response = new RestClient.LaML.MessagingResponse()
-  const message = response.message((dialogflowResponse);
+  response.message(dialogflowResponse);
   res.send(response.toString());
 });
 
